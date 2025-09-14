@@ -1,4 +1,4 @@
-package aula0509.application;
+package aula0509;
 
 public class Pessoa {
     private String nome;

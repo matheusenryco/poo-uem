@@ -1,11 +1,9 @@
 package aula0809.cenario01.application;
 
-import java.util.Scanner;
 import aula0809.cenario01.entities.Conta;
 
 public class ProgramConta {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
         Conta conta = new Conta();
 
 
@@ -23,7 +21,5 @@ public class ProgramConta {
 
         conta.sacar(2);
         System.out.println("Saldo: " + conta.getSaldo());
-
-        input.close();
     }
 }

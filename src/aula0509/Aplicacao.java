@@ -1,6 +1,5 @@
-package aula0509.application;
+package aula0509;
 
-import aula0509.application.Pessoa;
 public class Aplicacao {
     public static void main(String[] args) {
         System.out.println("Hello, world");

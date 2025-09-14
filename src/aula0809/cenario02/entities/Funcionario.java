@@ -48,11 +48,11 @@ public class Funcionario {
     }
 
     public double recebeAumento(double aumento) {
-        return this.salario += aumento;
+        return salario += aumento;
     }
 
     public double calculaGanhoAnual() {
-        return this.salario * 12;
+        return salario * 12;
     }
 
     public String toString() {
