@@ -24,7 +24,7 @@ public class ContaBancaria {
                 System.out.printf("Saldo: %.2f\n", saldo);
             }
 
-            if (opcao.equalsIgnoreCase("B")) {
+            else if (opcao.equalsIgnoreCase("B")) {
                 System.out.println("Quanto deseja sacar? ");
                 double saque = scanner.nextDouble();
 
@@ -37,17 +37,24 @@ public class ContaBancaria {
                 }
             }
 
-            if (opcao.equalsIgnoreCase("C")) {
+            else if (opcao.equalsIgnoreCase("C")) {
                 System.out.println("Quanto deseja depositar? ");
                 double deposito = scanner.nextDouble();
-                saldo += deposito;
 
-                System.out.printf("Depósito de R$ %.2f realizado com sucesso\n", deposito);
+                if (deposito <= 0) {
+                    System.out.println("O valor do depósito deve ser positivo");
+                }
+                else {
+                    saldo += deposito;
+                    System.out.printf("Depósito de R$ %.2f realizado com sucesso\n", deposito);
+                }
             }
 
-            if (opcao.equalsIgnoreCase("D")) {
+            else if (opcao.equalsIgnoreCase("D")) {
                 break;
             }
-        } while (opcao != "D");
+        } while (!opcao.equalsIgnoreCase("D"));
+
+        scanner.close();
     }
 }
