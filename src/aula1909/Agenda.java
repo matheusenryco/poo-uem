@@ -11,6 +11,7 @@ public class Agenda {
             this.mes = mes;
             this.ano = ano;
             this.anotacao = anotacao;
+            validaData();
     }
 
     void validaData() {
@@ -23,6 +24,6 @@ public class Agenda {
     }
 
     void mostraAnotacao() {
-        System.out.println(this.dia + "/" + this.mes + "/" + this.ano + ":" + this.anotacao);
+        System.out.println(this.dia + "/" + this.mes + "/" + this.ano + ": " + this.anotacao);
     }
 }
