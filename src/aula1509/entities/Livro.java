@@ -1,4 +1,4 @@
-package aula1509.exer01.entities;
+package aula1509.entities;
 
 public class Livro {
     private String titulo;

@@ -1,4 +1,4 @@
-package aula1509.exer01.entities;
+package aula1509.entities;
 
 public class Usuario {
     private String nome;
@@ -45,6 +45,9 @@ public class Usuario {
 
     public void mostrarDadosUsuario() {
         System.out.println("\n=================DADOS DO USUÁRIO=================");
-        System.out.println("Nome: " + getNome() + "\nIdade: " + getIdade() + "\nSexo: " + getSexo() + "\nTelefone: " + getTelefone());
+        System.out.println("Nome: " + getNome()
+                            + "\nIdade: " + getIdade()
+                            + "\nSexo: " + getSexo()
+                            + "\nTelefone: " + getTelefone());
     }
 }
