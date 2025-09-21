@@ -46,12 +46,12 @@ public class Emprestimo {
     }
 
     public void realizarEmprestimo() {
-        if (livro.isEmprestimo()) {
-            System.out.println("Empréstimo do livro " + livro.getTitulo() + "feito com sucesso!");
-            livro.setEmprestimo(false);
+        if (livro.isEmprestimo() == false) {
+            System.out.println("Empréstimo do livro " + livro.getTitulo() + " feito com sucesso!");
+            livro.setEmprestimo(true);
         }
         else {
-            System.out.println("ERRO! O livro " + livro.getTitulo() + " não está disponível");
+            System.out.println("O livro não está disponível no momento.");
         }
     }
 
@@ -61,18 +61,14 @@ public class Emprestimo {
                             + "\nHora do empréstimo: " + getHora()
                             + "\nLivro: " + livro.getTitulo()
                             + "\nUsuário: " + usuario.getNome());
-
-        System.out.println("\nEmpréstimo feito com sucesso!");
     }
 
-    /*
     public void devolveLivro() {
-        if (this.livro.isEmprestimo() == ) {
-            livro.setEmprestimo(false);
+        if (livro.isEmprestimo() == true) {
             System.out.println("O Livro " + livro.getTitulo() + " foi devolvido.");
-        }
-        else {
+            livro.setEmprestimo(false);
+        } else {
             System.out.println("Não é possivel devolver.");
         }
-        */
+    }
 }
