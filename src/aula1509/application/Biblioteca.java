@@ -15,11 +15,12 @@ public class Biblioteca {
 
         Emprestimo emprestimo = new Emprestimo("15/09/2025", "22:30", livro, usuario);
 
-        livro.mostrarDadosLivro();
         usuario.mostrarDadosUsuario();
+        livro.mostrarDadosLivro();
         emprestimo.realizarEmprestimo();
-        emprestimo.imprimirEmprestimo();
-
+        livro.abreLivro();
+        usuario.lerLivro();
+        livro.fechaLivro();
         emprestimo.devolveLivro();
     }
 }
