@@ -5,7 +5,6 @@ public class Usuario {
     private int idade;
     private String sexo;
     private String telefone;
-    private Livro livro;
 
     public Usuario(String nome, int idade, String sexo, String telefone) {
         this.nome = nome;
