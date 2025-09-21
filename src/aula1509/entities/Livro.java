@@ -108,5 +108,3 @@ public class Livro {
         + "\nEditora: " + getEditora() + "\nAno: " + getAno() + "\nEdição: " + getEdicao() + "\nNúmero de páginas: " + getNumFolhas());
     }
 }
-
-
