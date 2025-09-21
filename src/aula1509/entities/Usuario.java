@@ -5,6 +5,7 @@ public class Usuario {
     private int idade;
     private String sexo;
     private String telefone;
+    private Livro livro;
 
     public Usuario(String nome, int idade, String sexo, String telefone) {
         this.nome = nome;
@@ -41,6 +42,10 @@ public class Usuario {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public void lerLivro() {
+        System.out.println("Você está lendo o livro");
     }
 
     public void mostrarDadosUsuario() {
