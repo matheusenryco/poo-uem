@@ -9,6 +9,7 @@ public class Livro {
     private int edicao;
     private int numFolhas;
     private boolean emprestimo = false;
+    private boolean disponivelLeitura = true;
 
     public Livro(String titulo, String autor, String area, String editora, int ano, int edicao, int numFolhas) {
         this.titulo = titulo;
@@ -83,8 +84,26 @@ public class Livro {
         this.emprestimo = emprestimo;
     }
 
+    public boolean isDisponivelLeitura() {
+        return disponivelLeitura;
+    }
+
+    public void setDisponivelLeitura(boolean disponivelLeitura) {
+        this.disponivelLeitura = disponivelLeitura;
+    }
+
+    public void abreLivro() {
+        setDisponivelLeitura(true);
+        System.out.println("Livro aberto.");
+    }
+
+    public void fechaLivro() {
+        setDisponivelLeitura(false);
+        System.out.println("Livro fechado.");
+    }
+
     public void mostrarDadosLivro() {
-        System.out.println("=================DADOS DO LIVRO=================");
+        System.out.println("\n=================DADOS DO LIVRO=================");
         System.out.println("Nome: " + getTitulo() + "\nAutor: " + getAutor() + "\nÁrea: " + getArea()
         + "\nEditora: " + getEditora() + "\nAno: " + getAno() + "\nEdição: " + getEdicao() + "\nNúmero de páginas: " + getNumFolhas());
     }
